@@ -126,7 +126,10 @@ ROCKS.forEach(function(rock) { rock.remove() })
 
   document.removeEventListener('keydown', moveDodger);
 
-  alert("You Lose!");
+  START.innerHTML = 'Play again?'
+  START.style.display = 'inline'
+  
+  return alert("You Lose!");
 }
 
 function moveDodger(e) {
