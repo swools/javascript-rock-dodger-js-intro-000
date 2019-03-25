@@ -75,8 +75,8 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    rock.style.top = `${top += 2}px`
-    if (checkCollision(rock) === true) {
+    rock.style.top = `${top += 2}px`;
+    if (checkCollision(rock)) {
       return endGame()
     }
 
@@ -120,7 +120,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  clearInterval(gameInterval);
+  clearInterval(gameInterval)
 
   for (var i = 0; i < ROCKS.length; i++) {
     ROCKS[i].remove();
