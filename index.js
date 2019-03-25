@@ -128,7 +128,7 @@ ROCKS.forEach(function(rock) { rock.remove() })
 
   START.innerHTML = 'Play again?'
   START.style.display = 'inline'
-  
+
   return alert("You Lose!");
 }
 
